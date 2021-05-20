@@ -1,0 +1,14 @@
+C:\University Information\UniversityInformation\University.DataAccess\obj\Debug\University.DataAccess.csprojAssemblyReference.cache
+C:\University Information\UniversityInformation\University.DataAccess\obj\Debug\University.DataAccess.csproj.CoreCompileInputs.cache
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\University.DataAccess.dll.config
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\University.DataAccess.dll
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\University.DataAccess.pdb
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\EntityFramework.dll
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\University.Entities.dll
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\University.Entities.pdb
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\EntityFramework.xml
+C:\University Information\UniversityInformation\University.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\University Information\UniversityInformation\University.DataAccess\obj\Debug\University.DataAccess.csproj.CopyComplete
+C:\University Information\UniversityInformation\University.DataAccess\obj\Debug\University.DataAccess.dll
+C:\University Information\UniversityInformation\University.DataAccess\obj\Debug\University.DataAccess.pdb

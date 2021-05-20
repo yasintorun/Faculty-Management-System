@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDE6FB31-9C5A-4E3F-84DF-6ED37DCD15C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>University.Business</RootNamespace>
+    <AssemblyName>University.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IBaseService.cs" />
+    <Compile Include="Abstract\IDepartmentRecordService.cs" />
+    <Compile Include="Abstract\IDepartmentService.cs" />
+    <Compile Include="Abstract\ILecturerService.cs" />
+    <Compile Include="Abstract\ILessonRecordService.cs" />
+    <Compile Include="Abstract\ILessonService.cs" />
+    <Compile Include="Abstract\IStudentService.cs" />
+    <Compile Include="Concrete\DepartmentManager.cs" />
+    <Compile Include="Concrete\DepartmentRecordManager.cs" />
+    <Compile Include="Concrete\LecturerManager.cs" />
+    <Compile Include="Concrete\LessonManager.cs" />
+    <Compile Include="Concrete\LessonRecordManager.cs" />
+    <Compile Include="Concrete\StudentManager.cs" />
+    <Compile Include="DependencyResolvers\Ninject\BusinessModule.cs" />
+    <Compile Include="DependencyResolvers\Ninject\InstanceFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\University.Core\University.Core.csproj">
+      <Project>{F24B34F5-C169-4969-B294-8ABE73391C2E}</Project>
+      <Name>University.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\University.DataAccess\University.DataAccess.csproj">
+      <Project>{8dfe06d0-d33d-4e8e-bcf8-9838ecf3ab1e}</Project>
+      <Name>University.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\University.Entities\University.Entities.csproj">
+      <Project>{F164D7A2-7ABC-4FB0-B24F-ADA8B18446AC}</Project>
+      <Name>University.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

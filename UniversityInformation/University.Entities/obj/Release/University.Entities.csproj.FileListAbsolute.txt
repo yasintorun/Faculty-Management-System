@@ -1,0 +1,6 @@
+C:\University Information\UniversityInformation\University.Entities\bin\Release\University.Entities.dll
+C:\University Information\UniversityInformation\University.Entities\bin\Release\University.Entities.pdb
+C:\University Information\UniversityInformation\University.Entities\obj\Release\University.Entities.csprojAssemblyReference.cache
+C:\University Information\UniversityInformation\University.Entities\obj\Release\University.Entities.csproj.CoreCompileInputs.cache
+C:\University Information\UniversityInformation\University.Entities\obj\Release\University.Entities.dll
+C:\University Information\UniversityInformation\University.Entities\obj\Release\University.Entities.pdb
