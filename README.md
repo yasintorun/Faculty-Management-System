@@ -41,5 +41,5 @@ Bu proje katmanlı mimari kullanılarak oluşturulmuştur. Veritabanı işlemler
 <br><br><br>
 Bu proje katmanlı mimariyi, design pattern konularını ve Entityframework'ü daha iyi anlamamı sağladı.
 <br><br><br>
-_____Not:__ Bu proje bir öğrencinin dönem ödevi için yapıldı.___
+
 
